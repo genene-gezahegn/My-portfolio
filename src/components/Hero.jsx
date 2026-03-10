@@ -3,31 +3,23 @@ import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="text-center">
-          {/* Profile Photo */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-            className="mb-8"
-          >
-            <div className="relative w-48 h-48 mx-auto">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary-400 via-accent-400 to-primary-500 p-1">
-                <img
-                  src="/profile.jpg"
-                  alt="Genene Gezahegn"
-                  className="w-full h-full rounded-full object-cover"
-                />
-              </div>
-            </div>
-          </motion.div>
+    <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
+      {/* Background Photo with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/95 via-slate-900/90 to-slate-900/95 z-10"></div>
+        <img
+          src="/profile.jpg"
+          alt="Genene Gezahegn"
+          className="w-full h-full object-cover opacity-30"
+        />
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20">
+        <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            transition={{ duration: 0.5 }}
           >
             <h1 className="text-5xl md:text-7xl font-bold mb-4">
               <span className="text-slate-100">Genene Gezahegn</span>
@@ -40,7 +32,7 @@ const Hero = () => {
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl md:text-2xl text-slate-400 mb-12 max-w-3xl mx-auto"
           >
             I design and build scalable web applications that solve real problems.
@@ -49,7 +41,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <a
@@ -69,7 +61,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
             className="flex justify-center gap-6 mb-16"
           >
             <a
@@ -99,7 +91,7 @@ const Hero = () => {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
             className="animate-bounce"
           >
             <a href="#about">
