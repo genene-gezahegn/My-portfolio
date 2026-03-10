@@ -12,7 +12,7 @@ const Projects = () => {
         'A premium developer portfolio featuring smooth animations, glassmorphism design, interactive particle effects, and optimized performance. Built with modern React and TailwindCSS.',
       tech: ['React', 'Vite', 'TailwindCSS', 'Framer Motion', 'JavaScript'],
       github: 'https://github.com/genene-gezahegn/My-portfolio',
-      demo: '#', // Will be updated after deployment
+      demo: 'https://genene-portfolio-eight.vercel.app',
       gradient: 'from-purple-500 to-pink-500',
     },
     {
