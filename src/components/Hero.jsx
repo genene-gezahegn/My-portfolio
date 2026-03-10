@@ -5,16 +5,17 @@ const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       {/* Background Photo with Overlay */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/80 z-10"></div>
+      <div className="absolute inset-0" style={{ zIndex: 1 }}>
         <img
           src="/profile.jpg"
           alt="Genene Gezahegn"
-          className="w-full h-full object-cover opacity-60"
+          className="w-full h-full object-cover"
+          style={{ opacity: 0.4 }}
         />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/75 via-slate-900/65 to-slate-900/85"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative" style={{ zIndex: 2 }}>
         <div className="text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
