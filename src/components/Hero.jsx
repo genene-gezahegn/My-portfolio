@@ -14,11 +14,11 @@ const Hero = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
-          opacity: 0.5
+          opacity: 0.7
         }}
       >
       </div>
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/70 via-slate-900/60 to-slate-900/80" style={{ zIndex: 1 }}></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 via-slate-900/40 to-slate-900/60" style={{ zIndex: 1 }}></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative" style={{ zIndex: 2 }}>
         <div className="text-center">
