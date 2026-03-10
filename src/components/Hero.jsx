@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react'
+import profileImage from '../assets/profile.jpg'
 
 const Hero = () => {
   return (
@@ -9,7 +10,7 @@ const Hero = () => {
         className="absolute inset-0" 
         style={{ 
           zIndex: 1,
-          backgroundImage: 'url(/profile.jpg)',
+          backgroundImage: `url(${profileImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
